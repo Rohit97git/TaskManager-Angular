@@ -1,0 +1,24 @@
+<div class="w-full max-w-2xl bg-white rounded-2xl shadow-xl p-6 m-auto">
+  <!-- Header -->
+  <app-task-header [count]="filteredTask.length" [error]="errorMsg"></app-task-header>
+
+  <!-- Task Form -->
+  <app-task-form
+    [task]="taskForm"
+    [isEditing]="editingTask !== null"
+    (submitTask)="submitTask()"
+  ></app-task-form>
+
+  <!-- Filters -->
+  <app-task-filter
+    [searchTitle]="searchTitle"
+    [filterStatus]="filterStatus"
+    [sortBy]="sortBy"
+    (filterChange)="onFilterChange($event)"
+  >
+  </app-task-filter>
+
+  <!-- Task-list -->
+  <app-task-list [tasks]="filteredTask" (edit)="editTask($event)" (delete)="deleteTask($event)">
+  </app-task-list>
+</div>

@@ -1,0 +1,29 @@
+<div class="flex flex-col md:flex-row gap-4 mb-6">
+  <input
+    [ngModel]="searchTitle"
+    (ngModelChange)="searchTitle = $event; filterChange.emit({ searchTitle, filterStatus, sortBy })"
+    placeholder="Search by title..."
+    class="flex-1 px-4 py-2 border rounded-xl"
+  />
+
+  <select
+    [ngModel]="filterStatus"
+    (ngModelChange)="
+      filterStatus = $event; filterChange.emit({ searchTitle, filterStatus, sortBy })
+    "
+    class="px-4 py-2 border rounded-xl"
+  >
+    <option value="all">All</option>
+    <option value="active">Active</option>
+    <option value="completed">Completed</option>
+  </select>
+
+  <select
+    [ngModel]="sortBy"
+    (ngModelChange)="sortBy = $event; filterChange.emit({ searchTitle, filterStatus, sortBy })"
+    class="px-4 py-2 border rounded-xl"
+  >
+    <option value="priority">Priority</option>
+    <option value="status">Status</option>
+  </select>
+</div>

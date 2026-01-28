@@ -1,0 +1,53 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Build Task Manager",
+      "completed": true,
+      "priority": "medium"
+    },
+    {
+      "id": "8d76",
+      "title": "Build Angular Project-Observable + HttpClient",
+      "description": "its about learning",
+      "priority": "medium",
+      "status": "active"
+    },
+    {
+      "id": "302b",
+      "title": "Build EMS",
+      "description": "Angular Project",
+      "priority": "high",
+      "status": "active"
+    },
+    {
+      "id": "cc44",
+      "title": "Build Angular Project",
+      "description": "its about learning",
+      "priority": "high",
+      "status": "active"
+    },
+    {
+      "id": "dc40",
+      "title": "Build Simple Project-Angular",
+      "description": "its about learning",
+      "priority": "high",
+      "status": "active"
+    },
+    {
+      "id": "7718",
+      "title": "Going to Gym",
+      "description": "",
+      "priority": "medium",
+      "status": "completed"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "taskId": 1,
+      "text": "Start with component interaction",
+      "createdAt": "2026-01-28T10:30:00Z"
+    }
+  ]
+}

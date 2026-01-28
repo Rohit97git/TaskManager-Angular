@@ -1,0 +1,45 @@
+<!-- Task Input -->
+<form (ngSubmit)="submitTask.emit(task)" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+  <input
+    type="text"
+    placeholder="Task Title"
+    [(ngModel)]="task.title"
+    name="title"
+    required=""
+    class="col-span-2 px-4 py-2 border rouned-xl focus:ring-2 focus:ring-indigo-400 outline-none"
+  />
+  <input
+    type="text"
+    placeholder="Description"
+    [(ngModel)]="task.description"
+    name="description"
+    required=""
+    class="col-span-2 px-4 py-2 border rouned-xl focus:ring-2 focus:ring-indigo-400 outline-none"
+  />
+
+  <select
+    [(ngModel)]="task.priority"
+    name="priority"
+    class="px-4 py-2 border rouned-xl focus:ring-2 focus:ring-indigo-400 outline-none"
+  >
+    <option value="low">Low Priority</option>
+    <option value="medium">Medium Priority</option>
+    <option value="high">High Priority</option>
+  </select>
+
+  <select
+    [(ngModel)]="task.status"
+    name="status"
+    class="px-4 py-2 border rouned-xl focus:ring-2 focus:ring-indigo-400 outline-none"
+  >
+    <option value="active">Active</option>
+    <option value="completed">Completed</option>
+  </select>
+
+  <button
+    type="submit"
+    class="col-span-2 bg-indigo-600 text-white py-2 rounded-xl hover:bg-indigo-700 transition font-medium"
+  >
+    {{ isEditing ? 'Update Task' : 'Add Task' }}
+  </button>
+</form>

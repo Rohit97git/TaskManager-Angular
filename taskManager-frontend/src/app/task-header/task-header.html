@@ -1,0 +1,11 @@
+<div class="flex items-center justify-between mb-6">
+  <div>
+    <h1 class="text-2xl font-bold text-indigo-700">📝Task Manager</h1>
+    <p class="text-sm text-gray-500">Stay Productive</p>
+  </div>
+  <span class="text-sm text-gray-600 font-medium"> {{ count }} Tasks </span>
+
+  @if (error) {
+    <p class="text-red-600">{{ error }}</p>
+  }
+</div>

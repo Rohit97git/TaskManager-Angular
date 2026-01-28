@@ -1,0 +1,11 @@
+<!-- Task List -->
+<ul class="space-y-3">
+  @if (tasks.length === 0) {
+    <li class="text-center text-gray-400 py-6">No tasks found!!</li>
+  }
+
+  @for (task of tasks; track task.id) {
+    <app-task-item [task]="task" (edit)="edit.emit(task)" (delete)="delete.emit(task)">
+    </app-task-item>
+  }
+</ul>
