@@ -1,8 +1,8 @@
-📝 Angular Task Manager Application
+**📝 Angular Task Manager Application**
 
 A feature-rich Task Manager application built with Angular, focusing on clean architecture, reusable components, and real-world frontend patterns. The project demonstrates how to build a scalable Angular app with RESTful APIs, proper component communication, and a modern UI.
 
-🚀 Features
+**🚀 Features**
 
 ✅ Create, read, update, and delete tasks (CRUD)
 
@@ -20,7 +20,7 @@ A feature-rich Task Manager application built with Angular, focusing on clean ar
 
 🛠 Robust API error handling
 
-🏗 Architecture Overview
+**🏗 Architecture Overview**
 
 The application follows a container–presentational component pattern:
 
